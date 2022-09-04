@@ -1,0 +1,234 @@
+
+/* 
+ *  Font Families
+ * 
+ *  Lexend Deca 
+ *  Big Shoulders Display
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+
+
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* root element */
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.938rem;
+    height: 100vh;
+    
+}
+
+.container {
+    margin: 0;
+    height: 60%;
+    padding: 0 30px;
+}
+
+.cars {
+    max-width: 915px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Sedan */
+
+.cars .sedan {
+    background-color: var(--bright-orange);
+    padding: 3rem;
+    height: 100%;
+}
+
+.sedan h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 3rem;
+    color: var(--light-gray);
+    margin: 2rem auto;
+
+}
+
+.sedan p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.938rem;
+    color: var(--transparent-white);
+    line-height: 1.75rem;
+     margin: 2rem auto;
+}
+
+.sedan button {
+    width: 9rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.938rem;
+    text-align: center;
+    border: 0;
+    border-radius: 3.125rem;
+    background-color: var(--light-gray);
+    color: var(--bright-orange);
+    padding: 1rem;
+    margin: 2rem auto 1rem auto;
+    cursor: pointer;
+}
+
+.sedan button:hover {
+    color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+    background-color: var(--bright-orange);
+}
+
+
+/* SUVs */
+
+.cars .suv {
+    background-color: var(--dark-cyan);
+    padding: 3rem;
+    height: 100%;
+}
+
+.suv h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 3rem;
+    color: var(--light-gray);
+    margin: 2rem auto;
+}
+
+.suv p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.938rem;
+    color: var(--transparent-white);
+    line-height: 1.75rem;
+     margin: 2rem auto;
+}
+
+.suv button {
+    width: 9rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.938rem;
+    text-align: center;
+    border: 0;
+    border-radius: 3.125rem;
+    background-color: var(--light-gray);
+    color: var(--dark-cyan);
+    padding: 1rem;
+    margin: 2rem auto 1rem auto;
+    cursor: pointer;
+}
+
+.suv button:hover {
+    color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+    background-color: var(--dark-cyan);
+}
+
+
+/* Luxury */
+
+.cars .luxury {
+    background-color: var(--very-dark-cyan);
+    padding: 3rem;
+    height: 100%;
+}
+
+.luxury h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 3rem;
+    color: var(--light-gray);
+    margin: 2rem auto;
+}
+
+.luxury p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.938rem;
+    color: var(--transparent-white);
+    line-height: 1.75rem;
+     margin: 2rem auto;
+}
+
+.luxury button {
+    width: 9rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.938rem;
+    text-align: center;
+    border: 0;
+    border-radius: 3.125rem;
+    background-color: var(--light-gray);
+    color: var(--very-dark-cyan);
+    padding: 1rem;
+    margin: 2rem auto 1rem auto;
+    cursor: pointer;
+}
+
+.luxury button:hover {
+    color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+    background-color: var(--very-dark-cyan);
+}
+
+
+/* footer */
+/* 
+
+.attribution {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.838rem;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} 
+
+*/
+
+@media (max-width: 400px) {
+
+    .container {
+        height: 100%;
+    }
+
+    .cars {
+        grid-template-columns: 1fr;
+    }
+
+    .sedan h1,
+    .sedan p,
+    .sedan button {
+        margin: 1rem 0;
+    }
+
+    .suv h1,
+    .suv p,
+    .suv button {
+        margin: 1rem 0;
+    }
+    
+    .luxury h1,
+    .luxury p,
+    .luxury button {
+        margin: 1rem 0;
+    }
+    
+    
+}
